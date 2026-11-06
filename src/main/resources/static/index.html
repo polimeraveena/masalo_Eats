@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zosh Food</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      height: 75px;
+      background-color: #e91460;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      color: white;
+    }
+
+    .logo {
+      font-family: cursive;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-icons {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .nav-icons a {
+      color: white;
+      font-size: 27px;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: calc(100vh - 75px);
+      min-height: 500px;
+      background:
+              linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1600&q=85");
+
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 30px;
+      line-height: 1.5;
+      max-width: 650px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .nav-icons {
+        gap: 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 42px;
+      }
+
+      .hero-content p {
+        font-size: 21px;
+        padding: 0 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Zosh Food</div>
+
+  <div class="nav-icons">
+    <a href="#" title="Search">⌕</a>
+    <a href="#" title="Login">♟</a>
+    <a href="#" title="Cart">🛒</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Zosh Food</h1>
+    <p>Taste the Convenience: Food, Fast and Delivered.</p>
+  </div>
+</section>
+
+</body>
+</html>
